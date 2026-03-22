@@ -1,0 +1,106 @@
+.Barra {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  align-content: center;
+}
+.Boto {
+  border: 1px solid black;
+  background-color: #bf422b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  justify-content: right;
+}
+
+.menu-main {
+  border: 1px solid black;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagina_principal {
+  width: 100%;
+}
+.Nosotros {
+  display: grid;
+  grid-template-columns: 20% 40% 20%;
+  grid-template-areas:
+    "img1 texto1 texto1"
+    "texto2 texto2 img2";
+  gap: 30px;
+  align-items: center;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.texto1 {
+  grid-area: texto1;
+}
+
+.texto2 {
+  grid-area: texto2;
+}
+.Nosotros img {
+  width: 100%;
+}
+.Carta {
+  width: 80%;
+  margin: auto;
+}
+.Sobre_Nostros {
+  width: 80%;
+  margin: auto;
+}
+
+.TituloCarta {
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.menus {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.menu_tipo {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.menu_contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.burger {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 20px;
+  align-items: center;
+}
+
+.burger img {
+  width: 100%;
+}
