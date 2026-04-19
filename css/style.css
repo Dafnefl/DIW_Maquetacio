@@ -326,3 +326,141 @@ section {
   max-width: 8rem;
   height: auto;
 }
+
+/* ===== RESPONSIVE TABLET ===== */
+@media (max-width: 768px) {
+  /* ===== MENÚ ===== */
+  .logo-img {
+    display: none;
+  }
+  .Barra {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* ===== SOBRE NOSOTROS ===== */
+  .Nosotros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img1 img1"
+      "texto1 texto1"
+      "img2 texto2";
+  }
+
+  /* ===== CARTA ===== */
+  .menus {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .burger img {
+    width: 50%;
+  }
+
+  /* ===== RESERVA ===== */
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}
+
+/* ===== RESPONSIVE MÓVIL ===== */
+@media (max-width: 576px) {
+  /* ===== MENÚ ===== */
+  .logo-img {
+    display: none;
+  }
+  .menu-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Barra {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .Boto {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* ===== HEADER ===== */
+  .header-text {
+    left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* ===== SOBRE NOSOTROS ===== */
+  .Nosotros {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img1"
+      "texto1"
+      "img2"
+      "texto2";
+  }
+
+  /* ===== CARTA ===== */
+  .TituloCarta {
+    display: none;
+  }
+  .menus {
+    grid-template-columns: 1fr;
+  }
+
+  .menu_tipo {
+    writing-mode: horizontal-tb;
+    transform: none;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .burger {
+    align-items: center;
+    text-align: center;
+  }
+
+  .burger img {
+    width: 80%;
+  }
+
+  /* ===== GALERÍA ===== */
+  .flex {
+    flex-direction: column;
+  }
+
+  .imag {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* ===== RESERVA ===== */
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-button {
+    justify-content: center;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}
