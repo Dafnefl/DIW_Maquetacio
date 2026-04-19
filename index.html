@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homies&burgers</title>
-    <link rel="icon" type="Logo" href="IMG/Transparente_logo.png" />
+    <link rel="icon" type="image/png" href="IMG/Transparente_logo.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call"
+    />
   </head>
   <body>
+    <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
     <nav class="menu-main">
       <div class="logo">
         <a href="index.html">
@@ -27,14 +37,20 @@
     </nav>
 
     <div>
-      <header>
+      <header class="header">
         <img
           src="IMG/Logo/Hob_Esp.png"
           alt="imagen principal"
           class="pagina_principal"
         />
+        <div class="header-text">
+          <h1><strong>Homies & Burgers</strong></h1>
+          <h2>Clot</h2>
+        </div>
       </header>
+
       <main>
+        <!-- ===== SECCIÓN SOBRE NOSOTROS ===== -->
         <div class="Sobre_Nostros">
           <article>
             <h1>Sobre Nosaltres</h1>
@@ -56,7 +72,8 @@
             </p>
           </div>
         </div>
-        <div>
+        <!-- ===== SECCIÓN CARTA ===== -->
+        <div class="Carta">
           <!-- 
           
           <div class="TitolEntrants"><h1>Entrants</h1></div>
@@ -64,7 +81,7 @@
           <div class="Tipo_E_2"><h2>TENDERS DE POLLASTRE</h2></div>
           <div class="Tipo_E_3"><h2>TEQUEÑOS DE FORMATGE</h2></div>
         -->
-          <section class="Carta">
+          <section>
             <article>
               <h1>Carta</h1>
             </article>
@@ -84,7 +101,14 @@
                       cogombrets casolans, cheddar fos i ketchup
                     </p>
                   </div>
-                  <img src="IMG/Hamburgesas/Burger_1.png" />
+                  <div class="container">
+                    <img
+                      src="IMG/Hamburgesas/Burger_1.png"
+                      alt="Cheeseburger Clàssica"
+                      class="image"
+                    />
+                    <div class="overlay">Cheeseburger Clàssica</div>
+                  </div>
                 </div>
 
                 <div class="burger">
@@ -96,7 +120,14 @@
                       ketchup
                     </p>
                   </div>
-                  <img src="IMG/Hamburgesas/Burger_2.png" />
+                  <div class="container">
+                    <img
+                      src="IMG/Hamburgesas/Burger_2.png"
+                      alt="Bacon Cheeseburger"
+                      class="image"
+                    />
+                    <div class="overlay">Bacon Cheeseburger</div>
+                  </div>
                 </div>
 
                 <div class="burger">
@@ -108,7 +139,14 @@
                       americana
                     </p>
                   </div>
-                  <img src="IMG/Hamburgesas/Burger_3.png" />
+                  <div class="container">
+                    <img
+                      src="IMG/Hamburgesas/Burger_3.png"
+                      alt="American Burger"
+                      class="image"
+                    />
+                    <div class="overlay">American Burger</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -127,7 +165,14 @@
                       salsa teriyaki casolana, cogombrets i cheddar fos
                     </p>
                   </div>
-                  <img src="IMG/Hamburgesas/Burger_4.png" />
+                  <div class="container">
+                    <img
+                      src="IMG/Hamburgesas/Burger_4.png"
+                      alt="Hob Burger"
+                      class="image"
+                    />
+                    <div class="overlay">Hob Burger</div>
+                  </div>
                 </div>
 
                 <div class="burger">
@@ -138,7 +183,14 @@
                       bolets shiitake rostits i formatge provolone
                     </p>
                   </div>
-                  <img src="IMG/Hamburgesas/Burger_5.png" />
+                  <div class="container">
+                    <img
+                      src="IMG/Hamburgesas/Burger_5.png"
+                      alt="Trufada Burger"
+                      class="image"
+                    />
+                    <div class="overlay">Trufada Burger</div>
+                  </div>
                 </div>
 
                 <div class="burger">
@@ -150,7 +202,14 @@
                       cheddar fos
                     </p>
                   </div>
-                  <img src="IMG/Hamburgesas/Burger_6.png" />
+                  <div class="container">
+                    <img
+                      src="IMG/Hamburgesas/Burger_6.png"
+                      alt="Chicken Burger Royale"
+                      class="image"
+                    />
+                    <div class="overlay">Chicken Burger Royale</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,7 +222,199 @@
           <div class="Tipo_P_3">TEQUEÑOS DE NUTELLA</div>
           <div class="Tipo_P_4">COPA DE GELAT</div>
         --></div>
+        <!-- ===== SECCIÓN GALERÍA ===== -->
+        <div class="Galeri">
+          <section>
+            <article>
+              <h1>Galeria d'imatges</h1>
+            </article>
+
+            <div class="flex">
+              <div>
+                <img
+                  src="IMG/Restaurante/1.png"
+                  alt="Fotografia dins del restaurant"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img src="IMG/Restaurante/2.png" alt="Cuiners" class="imag" />
+              </div>
+              <div>
+                <img src="IMG/Restaurante/3.png" alt="Menjar" class="imag" />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/4.png"
+                  alt="Fotografia de l'entrada del restaurant"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/5.png"
+                  alt="Fotografia del Cartell de Hob"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/6.png"
+                  alt="Fotografia de la terrassa del restaurant"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/7.png"
+                  alt="Fotografia de les taules dins del restaurant"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/8.png"
+                  alt="Fotografia de un plat d'hamburgesa i patates"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/9.png"
+                  alt="Fotografia de un plat de Patates"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/10.png"
+                  alt="Fotografia de un plat de frankfurt"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/11.png"
+                  alt="Fotografia del menu"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/12.png"
+                  alt="Fotografia de un plat de tequeños"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/13.png"
+                  alt="Fotografia de les vistes desde dins del restaurant"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/14.png"
+                  alt="Fotografia logo del restaurant"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/15.png"
+                  alt="Cuiner fent patates"
+                  class="imag"
+                />
+              </div>
+              <div>
+                <img
+                  src="IMG/Restaurante/16.png"
+                  alt="Fotografia de un plat d'hamburgesa"
+                  class="imag"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- ===== SECCIÓN RESERVA ===== -->
+        <div class="Reserva">
+          <section>
+            <article>
+              <h1>Reserva</h1>
+            </article>
+
+            <form class="reserva-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="persones">Número de persones</label>
+                  <input
+                    type="number"
+                    id="persones"
+                    name="persones"
+                    min="1"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="data">Data</label>
+                  <input type="date" id="data" name="data" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="hora">Hora</label>
+                  <input type="time" id="hora" name="hora" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="descripcio">Descripció</label>
+                <textarea
+                  id="descripcio"
+                  name="descripcio"
+                  rows="4"
+                  placeholder="Alguna petició especial..."
+                ></textarea>
+              </div>
+
+              <div class="form-button">
+                <button type="submit">Reservar</button>
+              </div>
+            </form>
+          </section>
+        </div>
       </main>
     </div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-item">
+          <i class="material-icons">mail</i>
+          <span>2526_dafne.fuentes@iticbcn.cat</span>
+        </div>
+
+        <div class="footer-item">
+          <i class="material-icons">call</i>
+
+          <span>123 456 789</span>
+        </div>
+
+        <div class="footer-item footer-logo">
+          <img
+            src="IMG/Logo/Logo_HOB_todo.png"
+            alt="HOBESQ Logo"
+            class="footer-logo-img"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
