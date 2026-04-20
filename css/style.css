@@ -55,10 +55,24 @@ section {
 
 .header-text {
   position: absolute;
-  top: 50%;
-  left: 2rem;
-  transform: translateY(-50%);
-  color: white;
+  animation-name: animations;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes animations {
+  0% {
+    bottom: 0px;
+    left: 10rem;
+    opacity: 0;
+
+    color: black;
+  }
+  100% {
+    bottom: 80px;
+    left: 10rem;
+    opacity: 1;
+    color: black;
+  }
 }
 
 /* ===== SOBRE NOSOTROS ===== */
@@ -217,6 +231,10 @@ section {
   filter: brightness(50%);
 }
 
+/* ===== VIDEO ===== */
+.videoObj{
+  
+}
 /* ===== RESERVA ===== */
 .Reserva {
   width: 80%;
