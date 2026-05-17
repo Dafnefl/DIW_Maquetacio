@@ -1,177 +1,120 @@
-# 📄 README - Pràctica 9: HTML / CSS
+# Homies & Burgers — Pràctica 9 (HTML i CSS)
 
-## 📌 Mòdul
+## 📌 Descripció del projecte
 
-**Disseny d’Interfícies Web (DIW)**  
-RA2 - Crea interfícies web homogènies definint i aplicant estils  
-Activitat avaluable (60%)
+Aquest projecte consisteix en el desenvolupament d’una pàgina web per a un restaurant fictici, **Homies & Burgers**, dins del mòdul de **Disseny d’Interfícies Web (DIW)**.
 
----
-
-## 👤 Tipus d’activitat
-
-Treball individual
+L’objectiu principal és crear una interfície web estructurada, coherent i accessible utilitzant HTML semàntic i CSS avançat.
 
 ---
 
-# 🎯 Objectiu del projecte
+## 🎯 Objectius
 
-Aquesta pràctica consisteix en el desenvolupament d’una pàgina web responsive per al restaurant **Homies & Burgers**, aplicant HTML i CSS.
-
-L’objectiu principal és demostrar el domini de:
-
-- Maquetació amb Flexbox i Grid
-- Ús de variables CSS
-- Disseny responsive
-- Efectes visuals (hover, overlays, filtres)
-- Estructura semàntica HTML
-- Bona organització del codi
+- Reconèixer la modificació d’etiquetes HTML.
+- Aplicar fulls d’estil externs.
+- Utilitzar Flexbox i CSS Grid.
+- Crear classes reutilitzables.
+- Implementar variables CSS.
+- Garantir compatibilitat amb navegadors.
+- Millorar l’accessibilitat.
 
 ---
 
-# 📦 Tecnologies utilitzades
+## 🧱 Funcionalitats principals
 
-- HTML5
+### 🧭 Menú de navegació
+
+- Menú fix a la part superior (sticky)
+- Maquetació amb Flexbox
+- Efecte hover amb subratllat
+- Logotip integrat
+
+### 🖼️ Capçalera (Hero)
+
+- Imatge a amplada completa
+- Text superposat centrat lateralment
+- Disseny adaptable
+
+### 👥 Secció “Sobre nosaltres”
+
+- Maquetació amb CSS Grid (`grid-template-areas`)
+- Imatges amb cantonades arrodonides
+- Distribució equilibrada de text i imatge
+
+### 🍔 Carta
+
+- Maquetació amb CSS Grid
+- Categories verticals
+- Targetes de producte amb overlay en hover
+
+### 🖼️ Galeria
+
+- Maquetació amb Flexbox
+- Imatges responsives amb wrap
+- Efectes de brillantor i hover
+- Ús de `nth-child` per variacions visuals
+
+### 📝 Formulari de reserva
+
+- Estructura amb Grid
+- Camps accessibles i organitzats
+- Botó de reserva fix
+
+### 📞 Footer
+
+- Layout amb Flexbox
+- Icones de Google Material Symbols
+- Informació de contacte i logotip
+
+---
+
+## 🎨 Tecnologies utilitzades
+
+- HTML5 semàntic
 - CSS3
 - Flexbox
-- Grid Layout
+- CSS Grid
 - Variables CSS (`:root`)
 - Google Material Symbols
-
----
-
-# 📁 Estructura del projecte
-
-- 🧭 Menú de navegació sticky
-- 🖼️ Capçalera amb imatge principal
-- 👥 Secció “Sobre nosaltres”
-- 🍔 Carta del restaurant (Grid)
-- 📸 Galeria d’imatges (Flex)
-- 📝 Formulari de reserves
-- 📌 Footer amb contacte i logo
-
----
-
-# 📌 REQUISITS I IMPLEMENTACIÓ
-
-## 🧭 Menú (0,5 punts)
-
-- Fix a la part superior (sticky)
-- Maquetat amb Flexbox
-- Efecte hover amb subratllat
-- Inclou favicon
-
----
-
-## 📍 Botó de reserva (0,5 punts)
-
-- Posició fixed a la part inferior dreta
-- Accés directe al formulari
-- Visible durant el scroll
-
----
-
-## 🖼️ Capçalera (1 punt)
-
-- Imatge a pantalla completa
-- Adaptable a qualsevol resolució
-- Text posicionat sobre la imatge
-- Títol amb estil en negreta
-
----
-
-## 👥 Sobre nosaltres (1 punt)
-
-- Maquetació amb Grid
-- Ús de `grid-template-areas`
-- Imatges amb `border-radius`
-- Distribució equilibrada de text i imatges
-
----
-
-## 🍔 Carta (3 punts)
-
-- Maquetació amb Grid
-- Cada secció dins d’un únic grid
-- Categories verticals
-- Imatges amb overlay al hover
-- Disseny estructurat de cada producte
-
----
-
-## 📸 Galeria de fotos (2 punts)
-
-- Maquetació amb Flexbox
-- Imatges responsives amb `flex-wrap`
-- Efecte hover amb foscor (`brightness`)
-- Algunes imatges més fosques per defecte
-- Adaptació automàtica a diferents pantalles
-
----
-
-## 📝 Formulari (0,5 punts)
-
-- Layout estructurat amb grid
-- Inputs clars i accessibles
-- Botó destacat
-- Disseny net i funcional
-
----
-
-## 📌 Footer (1,5 punts)
-
-- Maquetació amb Flexbox
-- Icones de Google Material Symbols
-- Email i telèfon amb icones
-- Logo a la part esquerra
-- Disseny equilibrat i responsive
-
----
-
-# 🎨 Disseny i bones pràctiques
-
-## 🎨 Variables CSS
-
-S’han utilitzat variables per centralitzar colors:
-
-- `--color-principal`
-- `--color-secundario`
-- `--color-fondo-claro`
-
----
-
-## 📱 Responsive design
-
-- Disseny adaptable a qualsevol pantalla
-- Ús de mesures relatives (%, rem)
-- Sense scroll horitzontal
-
----
-
-## 🧹 Bones pràctiques
-
-- HTML semàntic
-- CSS organitzat i comentat
-- Ús de classes reutilitzables
-- Evitació de `background-image`
-- Estructura clara i mantenible
+- Disseny responsive
 
 ---
 
 ## ♿ Accessibilitat
 
-- Compatible amb navegadors principals
-- Preparat per validació WAVE
-- Bon contrast de colors
-- Estructura accessible
+- Ús correcte d’etiquetes semàntiques
+- Text alternatiu a totes les imatges
+- Estructura clara i jeràrquica
+- Validació amb extensió WAVE
 
 ---
 
-# 🚀 Resultat final
+## 📱 Disseny responsive
 
-El projecte consisteix en una pàgina web completa de restaurant amb:
+La pàgina s’adapta a diferents dispositius:
 
-- Disseny modern i responsive
-- Maquetació amb Grid i Flexbox
-- Efectes visuals i interacció
-- Bona experiència d’usuari
+- Ordinadors
+- Tablets
+- Mòbils
+
+Característiques:
+
+- Sense scroll horitzontal
+- Imatges adaptatives
+- Tipografia amb `rem/em`
+- Layout flexible
+
+---
+
+## ⚠️ Restriccions del projecte
+
+- No utilitzar estils en línia
+- No utilitzar `background-image` per contingut
+- No utilitzar `<br>` per maquetació
+- Ús obligatori de CSS extern
+- Ús de Grid i Flexbox
+- Comentaris obligatoris en HTML i CSS
+
+---
+
+## 📁 Repositori
