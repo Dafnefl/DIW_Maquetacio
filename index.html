@@ -13,8 +13,8 @@
   </head>
   <body>
     <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
-    <nav class="menu-main">
-      <div class="logo">
+    <nav class="menu-main" id="navbar">
+      <div class="logo" id="logo">
         <a href="index.html">
           <img
             src="IMG/Logo/Logo_HOB_todo.png"
@@ -30,7 +30,28 @@
         <div class="Boto">Galeria</div>
       </div>
     </nav>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").style.padding = "30px 10px";
+          document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("navbar").style.padding = "80px 10px";
+          document.getElementById("logo").style.fontSize = "35px";
+        }
+      }
+    </script>
     <div>
       <header class="header">
         <img
@@ -332,13 +353,67 @@
             </div>
           </section>
         </div>
-        <div class="video">
-          <video id="videoObj" width="320" height="240" controls>
+        <div class="video-section">
+        <div class="video-container">
+          <video id="myVideo" muted>
             <source src="movie.mp4" type="video/mp4" />
-            <source src="movie.ogg" type="video/ogg" />
-            Your browser does not support the video tag.
+            Tu navegador no soporta vídeo.
           </video>
+          <div class="video-controls">
+            <span class="material-symbols-outlined" onclick="playVideo()">
+              play_circle
+            </span>
+            <span class="material-symbols-outlined" onclick="pauseVideo()">
+              pause_circle
+            </span>
+            <span class="material-symbols-outlined" onclick="volumeOn()">
+              volume_up
+            </span>
+            <span class="material-symbols-outlined" onclick="volumeOff()">
+              volume_off
+            </span>
+          </div>
         </div>
+        </div>
+        <script>
+          const video = document.getElementById("myVideo");
+          function playVideo() {
+            video.play();
+          }
+          function pauseVideo() {
+            video.pause();
+          }
+          function volumeOn() {
+            video.muted = false;
+          }
+          function volumeOff() {
+            video.muted = true;
+          }
+          /* ===== NAVBAR SCROLL ===== */
+          window.onscroll = function () {
+            scrollNavbar();
+            autoPlayVideo();
+          };
+          function scrollNavbar() {
+            if (
+              document.body.scrollTop > 80 ||
+              document.documentElement.scrollTop > 80
+            ) {
+              document.getElementById("navbar").style.padding = "20px 10px";
+              document.getElementById("logo").style.fontSize = "20px";
+            } else {
+              document.getElementById("navbar").style.padding = "40px 10px";
+              document.getElementById("logo").style.fontSize = "35px";
+            }
+          }
+          /* ===== AUTOPLAY AL HACER SCROLL ===== */
+          function autoPlayVideo() {
+            const rect = video.getBoundingClientRect();
+            if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+              video.play();
+            }
+          }
+        </script>
         <!-- ===== SECCIÓN RESERVA ===== -->
         <div class="Reserva">
           <section>
