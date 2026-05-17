@@ -1,104 +1,104 @@
-# 📄 README -Pràctica Transicions, Animacions i Vídeo
+# 📄 README - Pràctica: Transicions, Animacions i Vídeo
 
 ## 📌 Descripció del projecte
 
-Aquest projecte és una pàgina web d’un restaurant on he aplicat:
+Aquest projecte és una pàgina web d’un restaurant anomenat **Homies & Burgers**, desenvolupada amb HTML, CSS i JavaScript pur.
+
+S’han aplicat els continguts de la pràctica:
 
 - Transicions CSS
-- Animacions CSS
-- Vídeo HTML5
+- Animacions CSS amb keyframes
+- Vídeo HTML5 responsive
 - Controls personalitzats amb JavaScript
-- Efectes amb scroll
+- Efectes amb scroll (navbar i autoplay vídeo)
+- Disseny responsive
 
-Tot el projecte està fet sense utilitzar frameworks, només HTML, CSS i JavaScript bàsic.
+---
 
-# Pràctica. TRANSICIONS-ANIMACIONS-VIDEOS
+# 🎯 EXERCICI 1 - TRANSICIONS
 
-## 🎯 Exercici 1 - Transicions
+## ✔ Què he fet
 
-Les transicions s’han aplicat a les imatges de la galeria.
+He aplicat transicions a les imatges de la galeria. Quan l’usuari passa el ratolí:
 
-### ✔ Què he fet:
+- Zoom (`scale`)
+- Rotació (`rotate`)
+- Filtres (contrast, blur, brightness, grayscale, sepia, saturate)
 
-- Quan passo el ratolí per sobre les imatges:
-  - fan zoom (`scale`)
-  - giren (`rotate`)
-  - canvien el filtre (`grayscale`, `contrast`, `brightness`, etc.)
-- S’ha utilitzat `overflow: hidden` per evitar que les imatges surtin del contenidor.
+També he utilitzat `overflow: hidden` per evitar que les imatges surtin del contenidor.
 
-📍 **codi:**
+## 📍 Codi (CSS)
 
-- Secció: Galeria d’imatges CSS: `.imag:hover` i `@keyframes`
-
+```css
 .flex div:nth-child(2) .imag:hover {
-animation: giroZoom 5s forwards;
-transform-origin: center;
+  animation: giroZoom 5s forwards;
+  transform-origin: center;
 }
 .flex div:nth-child(2) {
-overflow: hidden;
+  overflow: hidden;
 }
 @keyframes giroZoom {
-0% {
-transform: rotate(0deg) scale(1);
-opacity: 0;
-}
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0;
+  }
 
-100% {
-transform: rotate(360deg) scale(1.5);
-opacity: 1;
-}
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 1;
+  }
 }
 .flex div:nth-child(3) .imag:hover {
-animation: contra 3s forwards;
+  animation: contra 3s forwards;
 }
 
 @keyframes contra {
-0% {
-filter: contrast(0%);
-}
-100% {
-filter: contrast(100%);
-}
+  0% {
+    filter: contrast(0%);
+  }
+  100% {
+    filter: contrast(100%);
+  }
 }
 .flex div:nth-child(4) .imag:hover {
-animation: blu 4s forwards;
+  animation: blu 4s forwards;
 }
 
 @keyframes blu {
-0% {
-filter: blur(0px);
-}
-100% {
-filter: blur(5px);
-}
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(5px);
+  }
 }
 
 .flex div:nth-child(5) .imag:hover {
-animation: brit 3s forwards;
+  animation: brit 3s forwards;
 }
 
 @keyframes brit {
-0% {
-filter: brightness(0%);
-}
-100% {
-filter: brightness(100%);
-}
+  0% {
+    filter: brightness(0%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
 }
 
 .flex div:nth-child(6) .imag:hover {
-animation: blck 5s forwards;
-transform-origin: center;
+  animation: blck 5s forwards;
+  transform-origin: center;
 }
 
 @keyframes blck {
-0% {
-filter: grayscale(0%);
-}
+  0% {
+    filter: grayscale(0%);
+  }
 
-100% {
-filter: grayscale(100%);
-}
+  100% {
+    filter: grayscale(100%);
+  }
 }
 
 .flex div:nth-child(7) .imag:hover,
@@ -109,254 +109,287 @@ filter: grayscale(100%);
 .flex div:nth-child(14) .imag:hover,
 .flex div:nth-child(15) .imag:hover,
 .flex div:nth-child(16) .imag:hover {
-animation: saturat 3s forwards;
+  animation: saturat 3s forwards;
 }
 
 @keyframes saturat {
-0% {
-filter: saturate(0%);
-}
-100% {
-filter: saturate(100%);
-}
+  0% {
+    filter: saturate(0%);
+  }
+  100% {
+    filter: saturate(100%);
+  }
 }
 
 .flex div:nth-child(10) .imag:hover {
-animation: sepi 5s forwards;
+  animation: sepi 5s forwards;
 }
 .flex div:nth-child(10) {
-overflow: hidden;
+  overflow: hidden;
 }
 
 @keyframes sepi {
-0% {
-filter: sepia(0%);
-transform: scale(1);
+  0% {
+    filter: sepia(0%);
+    transform: scale(1);
+  }
+  100% {
+    filter: sepia(100%);
+    transform: scale(1.5);
+  }
 }
-100% {
-filter: sepia(100%);
-transform: scale(1.5);
-}
+```
+
+# 🎬 EXERCICI 2 - ANIMACIONS
+
+## ✔ Què he fet
+
+- He creat una animació al títol principal (.header-text)
+- El text apareix al carregar la pàgina
+- Puja cap amunt
+- Canvia de color durant l’entrada
+- Es queda en estat final
+
+## 📍 Codi (CSS)
+
+```css
+.header-text {
+  position: absolute;
+  animation-name: animations;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
 }
 
-- EXTRA
+@keyframes animations {
+  0% {
+    bottom: 0px;
+    left: 10rem;
+    opacity: 0;
+  }
 
+  25% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: purple;
+  }
+
+  100% {
+    bottom: 80px;
+    left: 10rem;
+    opacity: 1;
+    color: black;
+  }
+}
+```
+
+## ✔ Animacions extra
+
+```css
 .footer-item .material-symbols-outlined {
-animation: girarY 2s infinite;
-display: inline-block;
+  animation: girarY 2s infinite;
 }
+
 @keyframes girarY {
-0% {
-transform: rotateY(0deg);
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
-50% {
-transform: rotateY(180deg);
-}
-100% {
-transform: rotateY(360deg);
-}
-}
+
 .form-button button {
-animation: girarX 2s infinite;
-display: inline-block;
+  animation: girarX 2s infinite;
 }
 
 @keyframes girarX {
-0% {
-transform: rotateX(0deg);
-}
-50% {
-transform: rotateX(180deg);
-}
-100% {
-transform: rotateX(360deg);
-}
-}
-
----
-
-## 🎬 Exercici 2 - Animacions
-
-### ✔ Animació del títol principal:
-
-- El text de la capçalera apareix quan carrega la pàgina
-- Es mou cap amunt progressivament
-- Canvia de color fins arribar a l’estat final
-
-### ✔ Animacions extra:
-
-- He afegit altres animacions en imatges i botons
-- Utilitzen transformacions i filtres CSS ()
-
-📍 **codi:**
-
-.header-text {
-position: absolute;
-animation-name: animations;
-animation-duration: 7s;
-animation-fill-mode: forwards;
-}
-@keyframes animations {
-0% {
-bottom: 0px;
-left: 10rem;
-opacity: 0;
-}
-25% {
-color: white;
-}
-50% {
-color: red;
-}
-75% {
-color: purple;
-}
-100% {
-bottom: 80px;
-left: 10rem;
-opacity: 1;
-color: black;
-}
-}
-
-- Extra
-  .Boto:hover {
-  text-decoration: underline;
+  0% {
+    transform: rotateX(0deg);
   }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+```
 
-## 🎥 Exercici 3 - Vídeo HTML
+# 🎥 EXERCICI 3 - VÍDEO HTML
 
-- He afegit un vídeo dins la pàgina del restaurant
-- Està centrat amb CSS
-- És responsive i s’adapta a totes les pantalles
-- No genera scroll horitzontal
-- El vídeo està per defecte en mode silenciat
+## ✔ Què he fet
 
-📍 **codi:**
+He afegit un vídeo dins de la pàgina del restaurant, situat després de la galeria.
 
-- Video HTML
+## ✔ Característiques
 
-<video id="myVideo" muted>
-    <source src="movie.mp4" type="video/mp4" />
-    Tu navegador no soporta vídeo.
-</video>
+- Centrat amb CSS
+- Responsive
+- Sense scroll horitzontal
+- Per defecte: pausat i silenciat
 
----
+## 📍 Codi (HTML + CSS)
 
-## 🎮 Exercici 4 - Controls de vídeo personalitzats
-
-- He amagat els controls natius del vídeo
-- He creat controls propis amb icones de Google Fonts
-
-### ✔ Funcions:
-
-- ▶ Play → reprodueix el vídeo
-- ⏸ Pause → pausa el vídeo
-- 🔊 Volume on → activa el so
-- 🔇 Volume off → silencia el vídeo
-
-📍 **On està:**
-
-- HTML: `.video-controls`
-
-- JS: funcions `playVideo()`, `pauseVideo()`, `volumeOn()`, `volumeOff()`
-
-<div class="video-controls">
-<span class="material-symbols-outlined" onclick="playVideo()">
-    play_circle
-</span>
-<span class="material-symbols-outlined" onclick="pauseVideo()">
-    pause_circle
-</span>
-<span class="material-symbols-outlined" onclick="volumeOn()">
-    volume_up
-</span>
-<span class="material-symbols-outlined" onclick="volumeOff()">
-    volume_off
-</span>
+```html
+<div class="video-section">
+  <div class="video-container">
+    <video id="myVideo" muted>
+      <source src="movie.mp4" type="video/mp4" />
+    </video>
+  </div>
 </div>
+```
 
-- JS: funcions `playVideo()`, `pauseVideo()`, `volumeOn()`, `volumeOff()`
+```css
+.video-section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+}
 
-<script>
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+#myVideo {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+```
+
+# 🎮 EXERCICI 4 - CONTROLS PERSONALITZATS
+
+## ✔ Què he fet
+
+He creat controls personalitzats per al vídeo amb icones de Google Fonts.
+
+✔ Funcions
+
+- ▶ Play
+- ⏸ Pause
+- 🔊 So ON
+- 🔇 So OFF
+
+## 📍 Codi (HTML + CSS + JS)
+
+```html
+<div class="video-controls">
+  <span class="material-symbols-outlined" onclick="playVideo()"
+    >play_circle</span
+  >
+  <span class="material-symbols-outlined" onclick="pauseVideo()"
+    >pause_circle</span
+  >
+  <span class="material-symbols-outlined" onclick="volumeOn()">volume_up</span>
+  <span class="material-symbols-outlined" onclick="volumeOff()"
+    >volume_off</span
+  >
+</div>
+```
+
+```css
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.video-controls .material-symbols-outlined {
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.video-controls .material-symbols-outlined:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 15px white;
+}
+```
+
+```javaScript
 const video = document.getElementById("myVideo");
+
 function playVideo() {
-video.play();
+  video.play();
 }
+
 function pauseVideo() {
-video.pause();
+  video.pause();
 }
+
 function volumeOn() {
-video.muted = false;
+  video.muted = false;
 }
+
 function volumeOff() {
-video.muted = true;
+  video.muted = true;
 }
+```
 
+# 🧠 EXERCICI 5 - JAVASCRIPT AMB SCROLL
 
-## Exercici 5 - JavaScript amb scroll
+## ✔ Què he fet
 
-- El menú es redueix quan es fa scroll
-- El vídeo es reprodueix automàticament quan entra a la pantalla
+He implementat funcionalitats amb JavaScript + scroll:
 
-📍 **On està:**
-- JS: `scrollNavbar()` i `autoPlayVideo()`
+- 📉 Navbar que es redueix amb el scroll
+- 🎥 Vídeo que es reprodueix automàticament quan entra a pantalla
 
+## 📍 Codi (JavaScript)
+
+```javaScript
 window.onscroll = function () {
-scrollNavbar();
-autoPlayVideo();
+  scrollNavbar();
+  autoPlayVideo();
 };
+
 function scrollNavbar() {
-    if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-    ) {
-        document.getElementById("navbar").style.padding = "20px 10px";
-        document.getElementById("logo").style.fontSize = "20px";
-    } else {
-        document.getElementById("navbar").style.padding = "40px 10px";
-        document.getElementById("logo").style.fontSize = "35px";
-    }
+  if (
+    document.body.scrollTop > 80 ||
+    document.documentElement.scrollTop > 80
+  ) {
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.fontSize = "20px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
 }
+
+const video = document.getElementById("myVideo");
+
 function autoPlayVideo() {
-const rect = video.getBoundingClientRect();
-    if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-        video.play();
-    }
+  const rect = video.getBoundingClientRect();
+
+  if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+    video.play();
+  }
 }
-- Navbar: `#navbar`
+```
 
-<script>
-window.onscroll = function () {
-scrollFunction();
-};
+# 🧩 RESUM FINAL
 
-window.onscroll = function () {
-scrollFunction();
-};
+Aquest projecte inclou:
 
-function scrollFunction() {
-    if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-    ) {
-        document.getElementById("navbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.fontSize = "25px";
-    } else {
-        document.getElementById("navbar").style.padding = "80px 10px";
-        document.getElementById("logo").style.fontSize = "35px";
-    }
-}
-</script>
-
----
-
-## 🧩 Resum
-
-Aquest projecte integra:
-
-- Disseny responsive
+- Disseny responsive complet
 - Animacions CSS sense JavaScript
-- Interactivitat amb vídeo
-- Efectes visuals en galeria
-- JavaScript per scroll i control de vídeo
+- Transicions en galeria
+- Vídeo HTML5 amb controls personalitzats
+- JavaScript per scroll i interacció
+- Experiència d’usuari moderna i dinàmica

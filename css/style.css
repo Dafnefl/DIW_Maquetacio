@@ -426,7 +426,6 @@ section {
   }
 }
 
-
 .flex div:nth-child(2) .imag:hover {
   animation: giroZoom 5s forwards;
   transform-origin: center;
