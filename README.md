@@ -132,3 +132,9 @@ Sense scroll horitzontal i mantenint coherència visual.
 - Es manté la tècnica original de maquetació (flex/grid).
 - No es reescriuen estils innecessàriament.
 - Es prioritza reutilització i herència CSS.
+
+---
+
+## 👨‍💻 Autor
+
+Projecte desenvolupat com a pràctica acadèmica del mòdul DIW Fet per DAFNE FUENTES.
