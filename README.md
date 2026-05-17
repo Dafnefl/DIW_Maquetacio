@@ -115,10 +115,6 @@ Testat en:
 
 ---
 
-## 📁 Repositori
-
-## Branca:
-
 ## 👨‍💻 Autor
 
 Projecte desenvolupat com a pràctica acadèmica del mòdul DIW Fet per DAFNE FUENTES.
