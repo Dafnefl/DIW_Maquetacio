@@ -117,4 +117,7 @@ Característiques:
 
 ---
 
-## 📁 Repositori
+
+## 👨‍💻 Autor
+
+Projecte desenvolupat com a pràctica acadèmica del mòdul DIW Fet per DAFNE FUENTES.
