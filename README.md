@@ -393,3 +393,9 @@ Aquest projecte inclou:
 - Vídeo HTML5 amb controls personalitzats
 - JavaScript per scroll i interacció
 - Experiència d’usuari moderna i dinàmica
+
+---
+
+## 👨‍💻 Autor
+
+Projecte desenvolupat com a pràctica acadèmica del mòdul DIW Fet per DAFNE FUENTES.
